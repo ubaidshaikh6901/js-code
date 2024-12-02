@@ -8,6 +8,7 @@ body {
   align-items: center;
   height: 100vh;
   box-sizing: border-box;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb);
 }
 
 .slider-container-wrapper {
