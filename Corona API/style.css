@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #A2C2E1, #6A88B3); /* Soft blue gradient for a calming effect */
+    font-family: 'Arial', sans-serif;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack header and main vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Header with unique design */
+  header {
+    width: 100%;
+    background: linear-gradient(45deg, #4A90E2, #50E3C2); /* Light blue to teal gradient */
+    color: white;
+    padding: 8px 15px; /* Compact padding for a smaller header */
+    text-align: center;
+    font-size: 1.5rem; /* Reduced font size */
+    letter-spacing: 3px;
+    border-bottom: 3px solid #2F80ED; /* Unique border line */
+    text-transform: capitalize;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Main Content Section */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure content stays below the header */
+    width: 100%;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    margin-top: 20px; /* Add some space below the header */
+  }
+  
+  h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+  }
+  
+  /* Country Selector */
+  #countrySelector {
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: 2px solid #4A90E2;
+    font-size: 1.1rem;
+    background: linear-gradient(145deg, #ffffff, #E0F7FA); /* Light teal gradient */
+    color: #333;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  #countrySelector:hover {
+    background: linear-gradient(145deg, #E0F7FA, #4FC3F7); /* Teal blue hover effect */
+    border-color: #50E3C2;
+  }
+  
+  /* Button Styling */
+  #getCovidData {
+    background: linear-gradient(135deg, #FFB74D, #FF7043); /* Orange to coral gradient */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 35px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  #getCovidData:hover {
+    background: linear-gradient(135deg, #FF7043, #FFB74D); /* Reversed gradient on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  #getCovidData:active {
+    transform: translateY(2px); /* Button press effect */
+  }
+  
+  /* Covid Data Display */
+  #covidDisplay {
+    display: none;
+    background: linear-gradient(145deg, #F0F4F8, #B3C2DF); /* Soft blue gradient */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  #covidDisplay h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #FF5722; /* Unique color for the country name */
+  }
+  
+  #covidDisplay p {
+    font-size: 1.2rem;
+    margin: 8px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    main {
+      width: 85%;
+      padding: 20px;
+    }
+  
+    header {
+      font-size: 1.4rem; /* Smaller font size for mobile */
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    main {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    header {
+      font-size: 1.2rem; /* Further reduce font size for smaller screens */
+      padding: 10px;
+    }
+  
+    #getCovidData {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    #covidDisplay {
+      width: 100%;
+    }
+  }
+  

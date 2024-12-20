@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>COVID-19 Tracker</h1>
+  </header>
+  <main>
+    <div>
+      <label for="countrySelector">Select Country:</label>
+      <select id="countrySelector">
+        <option value="">-- Select a Country --</option>
+      </select>
+      <button id="getCovidData">Get COVID-19 Data</button>
+    </div>
+    <div id="covidDisplay" style="display: none;">
+      <h2 id="country"></h2>
+      <p id="cases"></p>
+      <p id="deaths"></p>
+      <p id="recovered"></p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
