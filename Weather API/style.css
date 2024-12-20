@@ -1,0 +1,108 @@
+/* General Reset */
+body,
+h1,
+h2,
+p,
+select,
+button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6cdbeb, #e9f8fe);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+}
+
+/* App Container */
+.app-container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 20px 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+}
+
+/* Title Styling */
+.app-title {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+/* Dropdown and Button */
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.city-dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #bdc3c7;
+    width: 70%;
+}
+
+.fetch-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.fetch-button:hover {
+    background: #2980b9;
+}
+
+/* Weather Card */
+.weather-card {
+    display: none;
+    background: linear-gradient(145deg, #dff9fb, #c7ecee);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.temperature,
+.description,
+.humidity {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
